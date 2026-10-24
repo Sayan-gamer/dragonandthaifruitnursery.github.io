@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon and Thai Fruit Nursery</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Elegant Fonts matching the reference image -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nursery: {
+                            green: '#1a3322',      /* Dark forest green header */
+                            lightgreen: '#2d4d38', 
+                            beige: '#f8f5ee',      /* Off-white/beige background */
+                            text: '#333333'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f8f5ee; color: #333333; }
+        .product-card { background-color: #ffffff; transition: transform 0.3s ease; }
+        .product-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Announcement Bars -->
+    <div class="bg-nursery-green text-gray-300 text-xs text-center py-2 uppercase tracking-widest border-b border-nursery-lightgreen">
+        Dragon & Thai Fruit Nursery &bull; EST. 2024 - INDIA
+    </div>
+    <div class="bg-nursery-green text-white text-xs sm:text-sm text-center py-2.5 uppercase tracking-widest flex justify-center items-center gap-4">
+        <span class="opacity-50">&lt;</span>
+        <span>RARE GRAFTED VARIETALS - MASTER NURSERY GROWN</span>
+        <span class="opacity-50">&gt;</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white px-4 py-4 border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Hamburger Menu Icon -->
+            <div class="flex gap-4">
+                <svg class="w-6 h-6 text-gray-800 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
+            <!-- Logo Name -->
+            <div class="font-serif text-xl sm:text-2xl font-semibold text-nursery-green tracking-wide text-center">
+                Dragon & Thai Fruit
+            </div>
+            <!-- Search Icon -->
+            <div class="flex gap-4">
+                <svg class="w-5 h-5 text-gray-600 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Green Info Bar -->
+    <div class="bg-nursery-lightgreen text-white text-[10px] sm:text-xs text-center py-2 flex flex-wrap justify-center gap-x-8 gap-y-2 uppercase tracking-wider">
+        <span>&bull; LIVE PLANT GROWTH GUARANTEE</span>
+        <span>&bull; EXPERT CULTIVATION SUPPORT</span>
+        <span class="hidden sm:inline">&bull; 1000+ PINCODES SERVED</span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Header Section -->
+        <div class="mb-12 flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="max-w-2xl">
+                <span class="text-xs font-semibold tracking-widest text-gray-500 uppercase border border-gray-300 px-3 py-1 mb-4 inline-block">Collection</span>
+                <h1 class="font-serif text-4xl sm:text-5xl text-nursery-green mb-6 mt-4">All Nursery Plants</h1>
+                <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                    Browse our complete collection of premium grafted Indian and exotic plants — specializing in Dragon Fruit, Thai Guava, and rare tropicals. 
+                    Every plant is master-grafted, nursery grown, and curated for your grow space.
+                </p>
+            </div>
+            <!-- Decorative Tree Graphic -->
+            <div class="hidden md:block opacity-40 mt-6 md:mt-0">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="40" r="30" fill="#8a9a5b" opacity="0.6"/>
+                    <circle cx="35" cy="55" r="20" fill="#718355" opacity="0.6"/>
+                    <circle cx="65" cy="55" r="20" fill="#4a5d23" opacity="0.6"/>
+                    <rect x="46" y="65" width="8" height="35" fill="#4a5d23" opacity="0.8"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Filter Bar (Simplified) -->
+        <div class="flex flex-wrap items-center justify-between border-t border-b border-gray-200 py-4 mb-10 text-xs sm:text-sm text-gray-500">
+            <div class="flex gap-4 overflow-x-auto pb-2 sm:pb-0 w-full sm:w-auto">
+                <span class="mr-2 pt-1 font-medium">Filter:</span>
+                <button class="border border-gray-300 px-3 py-1.5 flex items-center gap-2 bg-transparent hover:bg-white transition-colors">AVAILABILITY <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                <button class="border border-gray-300 px-3 py-1.5 flex items-center gap-2 bg-transparent hover:bg-white transition-colors">GROW SPACE <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+            
+            <!-- Plant Card 1 -->
+            <div class="product-card flex flex-col items-center p-8 border border-gray-100 rounded-sm">
+                <!-- Replace src with your own plant images -->
+                <img src="https://images.unsplash.com/photo-1595856754078-43d93708bb87?auto=format&fit=crop&q=80&w=400&h=400" alt="Red Dragon Fruit" class="w-56 h-56 object-cover object-center mb-6 rounded-full">
+                
+                <h3 class="font-serif text-2xl text-blue-500 font-bold mb-1 text-center">Siam Red / Thai Dragon</h3>
+                <p class="text-nursery-green font-serif italic text-lg mb-6 text-center">Country of Origin: Thailand</p>
+                
+                <div class="w-full flex flex-col items-center mt-auto">
+                    <p class="text-xs text-gray-400 mb-4 uppercase tracking-widest">Grafted Rootstock</p>
+                    <button class="w-full bg-nursery-green hover:bg-nursery-lightgreen text-white py-3 px-6 text-sm tracking-widest uppercase transition-colors">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plant Card 2 -->
+            <div class="product-card flex flex-col items-center p-8 border border-gray-100 rounded-sm">
+                <img src="https://images.unsplash.com/photo-1533036437989-130d249f33bb?auto=format&fit=crop&q=80&w=400&h=400" alt="Thai Guava" class="w-56 h-56 object-cover object-center mb-6 rounded-full">
+                
+                <h3 class="font-serif text-2xl text-teal-600 font-bold mb-1 text-center">VNR Bihi / Thai Guava</h3>
+                <p class="text-nursery-green font-serif italic text-lg mb-6 text-center">Country of Origin: India / Thailand</p>
+                
+                <div class="w-full flex flex-col items-center mt-auto">
+                    <p class="text-xs text-gray-400 mb-4 uppercase tracking-widest">Air-Layered Plant</p>
+                    <button class="w-full bg-nursery-green hover:bg-nursery-lightgreen text-white py-3 px-6 text-sm tracking-widest uppercase transition-colors">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plant Card 3 -->
+            <div class="product-card flex flex-col items-center p-8 border border-gray-100 rounded-sm">
+                <img src="https://images.unsplash.com/photo-1552248524-18490a074092?auto=format&fit=crop&q=80&w=400&h=400" alt="Kaffir Lime" class="w-56 h-56 object-cover object-center mb-6 rounded-full">
+                
+                <h3 class="font-serif text-2xl text-green-700 font-bold mb-1 text-center">Makrut / Kaffir Lime</h3>
+                <p class="text-nursery-green font-serif italic text-lg mb-6 text-center">Country of Origin: Southeast Asia</p>
+                
+                <div class="w-full flex flex-col items-center mt-auto">
+                    <p class="text-xs text-gray-400 mb-4 uppercase tracking-widest">Grafted Variety</p>
+                    <button class="w-full bg-nursery-green hover:bg-nursery-lightgreen text-white py-3 px-6 text-sm tracking-widest uppercase transition-colors">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plant Card 4 -->
+            <div class="product-card flex flex-col items-center p-8 border border-gray-100 rounded-sm">
+                <img src="https://images.unsplash.com/photo-1620059388836-8a9d1871ca9d?auto=format&fit=crop&q=80&w=400&h=400" alt="Thai Rose Apple" class="w-56 h-56 object-cover object-center mb-6 rounded-full">
+                
+                <h3 class="font-serif text-2xl text-pink-600 font-bold mb-1 text-center">Chompoo / Rose Apple</h3>
+                <p class="text-nursery-green font-serif italic text-lg mb-6 text-center">Country of Origin: Thailand</p>
+                
+                <div class="w-full flex flex-col items-center mt-auto">
+                    <p class="text-xs text-gray-400 mb-4 uppercase tracking-widest">Air-Layered Plant</p>
+                    <button class="w-full bg-nursery-green hover:bg-nursery-lightgreen text-white py-3 px-6 text-sm tracking-widest uppercase transition-colors">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-nursery-green text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs opacity-70 tracking-widest uppercase">
+            &copy; 2024 Dragon and Thai Fruit Nursery
+        </div>
+    </footer>
+
+</body>
+</html>
